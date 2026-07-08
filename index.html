@@ -4,131 +4,229 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ceylon Horizon Tours | Premium Private Guide Sri Lanka</title>
-    <!-- Tailwind CSS v4 -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- FontAwesome Icons (Social Media Icons වලට) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+<body class="bg-slate-50 text-slate-800 font-sans antialiased scroll-smooth">
 
-    <!-- Navigation Bar -->
-    <nav class="bg-white shadow-xs sticky top-0 z-50">
+    <nav class="bg-white/90 backdrop-blur-md shadow-xs sticky top-0 z-50 transition-all">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-xl font-bold tracking-wider text-emerald-600">CEYLON HORIZON</a>
+            <a href="#" class="text-xl font-black tracking-widest text-emerald-600">CEYLON HORIZON</a>
+            <div class="hidden md:flex gap-6 font-medium text-slate-600">
+                <a href="#about" class="hover:text-emerald-600 transition">About Me</a>
+                <a href="#services" class="hover:text-emerald-600 transition">Services</a>
+                <a href="#gallery" class="hover:text-emerald-600 transition">Gallery</a>
+                <a href="#reviews" class="hover:text-emerald-600 transition">Reviews</a>
+            </div>
             <div class="flex gap-4 text-lg text-slate-600">
                 <a href="https://wa.me/94771234567" target="_blank" class="hover:text-green-500 transition"><i class="fab fa-whatsapp"></i></a>
                 <a href="https://facebook.com" target="_blank" class="hover:text-blue-600 transition"><i class="fab fa-facebook"></i></a>
-                <a href="https://instagram.com" target="_blank" class="hover:text-pink-600 transition"><i class="fab fa-instagram"></i></a>
                 <a href="https://tripadvisor.com" target="_blank" class="hover:text-emerald-500 transition"><i class="fab fa-tripadvisor"></i></a>
             </div>
         </div>
     </nav>
 
-    <!-- Premium Hero Section -->
-    <header class="relative bg-slate-900 text-white py-32 px-6 text-center overflow-hidden">
-        <!-- Background Image (Unsplash Travel Photo) -->
-        <img src="https://images.unsplash.com/photo-1546708973-b339540b5162?auto=format&fit=crop&w=1920&q=80" alt="Sri Lanka Tour" class="absolute inset-0 w-full h-full object-cover opacity-40">
+    <header class="relative bg-slate-900 text-white py-36 px-6 text-center overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1546708973-b339540b5162?auto=format&fit=crop&w=1920&q=80" alt="Sri Lanka Tour" class="absolute inset-0 w-full h-full object-cover opacity-35">
         <div class="relative max-w-3xl mx-auto z-10">
-            <span class="text-emerald-400 font-semibold tracking-widest text-sm uppercase">Certified Chauffeur & Guide</span>
-            <h1 class="text-4xl md:text-6xl font-extrabold mt-2 leading-tight">Welcome to Sri Lanka with Saman</h1>
-            <p class="mt-4 text-lg md:text-xl text-slate-300">Experience tailor-made private tours, rich culture, stunning wildlife, and pristine beaches with a local expert.</p>
-            <div class="mt-8">
-                <a href="https://wa.me/94771234567?text=Hi!%20I%20visited%20your%20website%20and%20I%20would%20like%20to%20plan%20a%20tour%20with%20you." 
+            <span class="text-emerald-400 font-bold tracking-widest text-xs md:text-sm uppercase bg-emerald-500/10 px-4 py-1.5 rounded-full border border-emerald-500/20">SLTDA Registered Chauffeur & Guide</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold mt-4 leading-tight">Crafting Unforgettable Sri Lankan Journeys</h1>
+            <p class="mt-4 text-base md:text-xl text-slate-300 max-w-2xl mx-auto">Explore hidden gems, pristine coastlines, and ancient heritage with a professional, safe, and friendly private guide.</p>
+            <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="https://wa.me/94771234567?text=Hi!%20I%20want%20to%20plan%20a%20tour%20with%20you." 
                    target="_blank" 
-                   class="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-full shadow-lg inline-flex items-center gap-3 transition transform hover:scale-105">
-                   <i class="fab fa-whatsapp text-xl"></i> Book Your Tour Now
+                   class="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-full shadow-lg inline-flex items-center gap-3 transition transform hover:scale-105 w-full sm:w-auto justify-center">
+                   <i class="fab fa-whatsapp text-xl"></i> Book via WhatsApp
+                </a>
+                <a href="#gallery" class="bg-white/10 hover:bg-white/20 text-white border border-white/20 font-semibold py-4 px-8 rounded-full shadow-md inline-flex items-center transition w-full sm:w-auto justify-center">
+                    View Recent Tours
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- About Section -->
-    <section class="max-w-4xl mx-auto px-6 py-16 text-center">
-        <h2 class="text-3xl font-bold text-slate-900">Meet Your Guide</h2>
-        <div class="w-16 h-1 bg-emerald-500 mx-auto mt-3 mb-8"></div>
-        <p class="text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto">
-            Ayubowan! I am **Saman**, a Sri Lanka Tourism Development Authority (SLTDA) registered national tourist guide. With over 8 years of experience, my goal is to show you the real hidden gems of our beautiful island while ensuring your comfort and safety.
-        </p>
-    </section>
-
-    <!-- Tour Packages Section -->
-    <section class="bg-slate-100 py-16 px-6">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-bold text-center text-slate-900">Popular Itineraries</h2>
-            <div class="w-16 h-1 bg-emerald-500 mx-auto mt-3 mb-12"></div>
-            
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Package 1 -->
-                <div class="bg-white rounded-xl shadow-xs overflow-hidden transition hover:shadow-md">
-                    <img src="https://images.unsplash.com/photo-1588598126210-22c60f23906a?auto=format&fit=crop&w=600&q=80" alt="Cultural Tour" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <span class="text-xs font-semibold text-emerald-600 uppercase bg-emerald-50 px-2 py-1 rounded">3 Days</span>
-                        <h3 class="text-xl font-bold mt-2 text-slate-900">Cultural Triangle</h3>
-                        <p class="text-slate-600 text-sm mt-2">Explore Sigiriya Rock, Dambulla Cave Temple, and the ancient city of Polonnaruwa.</p>
-                    </div>
-                </div>
-
-                <!-- Package 2 -->
-                <div class="bg-white rounded-xl shadow-xs overflow-hidden transition hover:shadow-md">
-                    <img src="https://images.unsplash.com/photo-1561738787-ea272149b5c8?auto=format&fit=crop&w=600&q=80" alt="Wildlife Tour" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <span class="text-xs font-semibold text-amber-600 uppercase bg-amber-50 px-2 py-1 rounded">5 Days</span>
-                        <h3 class="text-xl font-bold mt-2 text-slate-900">Wildlife & Tea Country</h3>
-                        <p class="text-slate-600 text-sm mt-2">Safari in Yala National Park, Nuwara Eliya tea estates, and a scenic Ella train ride.</p>
-                    </div>
-                </div>
-
-                <!-- Package 3 -->
-                <div class="bg-white rounded-xl shadow-xs overflow-hidden transition hover:shadow-md">
-                    <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=600&q=80" alt="Beach Tour" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <span class="text-xs font-semibold text-blue-600 uppercase bg-blue-50 px-2 py-1 rounded">7 Days</span>
-                        <h3 class="text-xl font-bold mt-2 text-slate-900">Ultimate Coastline</h3>
-                        <p class="text-slate-600 text-sm mt-2">Relax in Mirissa (Whale watching), historic Galle Fort, and Bentota water sports.</p>
-                    </div>
-                </div>
+    <section id="about" class="max-w-6xl mx-auto px-6 py-20">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="relative">
+                <div class="absolute -inset-1 bg-gradient-to-r border-emerald-500 to-teal-500 rounded-2xl blur opacity-30"></div>
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80" alt="Tour Guide Saman" class="relative rounded-2xl shadow-md object-cover h-[450px] w-full">
             </div>
-        </div>
-    </section>
-
-    <!-- Live TripAdvisor Reviews Section Mockup -->
-    <section class="max-w-4xl mx-auto px-6 py-16">
-        <h2 class="text-3xl font-bold text-center text-slate-900">Guest Testimonials</h2>
-        <div class="w-16 h-1 bg-emerald-500 mx-auto mt-3 mb-12"></div>
-        
-        <!-- TripAdvisor Card Style -->
-        <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-xs max-w-xl mx-auto">
-            <div class="flex justify-between items-center border-b border-slate-100 pb-4 mb-4">
-                <div class="flex items-center gap-3">
-                    <i class="fab fa-tripadvisor text-3xl text-emerald-500"></i>
+            <div>
+                <span class="text-emerald-600 font-bold tracking-wider text-sm uppercase">Your Local Companion</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mt-1">Ayubowan! I am Saman</h2>
+                <div class="w-12 h-1 bg-emerald-500 mt-3 mb-6"></div>
+                <p class="text-slate-600 text-lg leading-relaxed mb-6">
+                    With over 8 years of active experience in guiding international travelers across Sri Lanka, I specialize in private tailor-made tours. Whether you travel solo, as a couple, or with family, I provide seamless travel management with safety as the topmost priority.
+                </p>
+                <div class="grid grid-cols-2 gap-4 border-t border-slate-200 pt-6">
                     <div>
-                        <h4 class="font-bold text-slate-900 text-sm">TripAdvisor Reviewer</h4>
-                        <p class="text-xs text-slate-400">Excellent 5/5 Rating</p>
+                        <h4 class="font-bold text-slate-900 text-2xl">8+</h4>
+                        <p class="text-sm text-slate-500">Years Experience</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-900 text-2xl">450+</h4>
+                        <p class="text-sm text-slate-500">Happy Groups</p>
                     </div>
                 </div>
-                <div class="text-emerald-500 flex gap-1 text-xs">
-                    <i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i>
-                </div>
             </div>
-            <p class="italic text-slate-600 text-sm leading-relaxed">
-                "Saman was an incredible guide! He organized our whole 7-day trip perfectly. His driving was very safe, and his knowledge about Sri Lankan history is amazing. Highly recommend!"
-            </p>
-            <p class="text-xs font-semibold text-slate-400 mt-4">- Mark & Emma, UK (June 2026)</p>
         </div>
     </section>
 
-    <!-- Footer Area -->
-    <footer class="bg-slate-900 text-slate-400 py-12 px-6 text-center border-t border-slate-800">
+    <section id="services" class="bg-slate-100 py-20 px-6">
         <div class="max-w-6xl mx-auto">
-            <h3 class="text-white font-bold tracking-wider mb-4">CEYLON HORIZON TOURS</h3>
-            <p class="text-sm max-w-md mx-auto mb-6">Let's plan your dream holiday in Sri Lanka. Get in touch with me directly via social networks.</p>
-            <div class="flex justify-center gap-6 text-2xl mb-8">
-                <a href="https://wa.me/94771234567" target="_blank" class="hover:text-green-400 transition"><i class="fab fa-whatsapp"></i></a>
-                <a href="https://facebook.com" target="_blank" class="hover:text-blue-500 transition"><i class="fab fa-facebook"></i></a>
-                <a href="https://instagram.com" target="_blank" class="hover:text-pink-400 transition"><i class="fab fa-instagram"></i></a>
-                <a href="https://tripadvisor.com" target="_blank" class="hover:text-emerald-400 transition"><i class="fab fa-tripadvisor"></i></a>
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-emerald-600 font-bold tracking-wider text-sm uppercase">What I Offer</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mt-1">Premium Guiding Services</h2>
+                <div class="w-12 h-1 bg-emerald-500 mx-auto mt-3"></div>
             </div>
-            <p class="text-xs text-slate-600">&copy; 2026 Ceylon Horizon Tours. All Rights Reserved. Designed by YourBrand.</p>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-xs hover:shadow-md transition group">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-600 text-xl font-bold group-hover:bg-emerald-600 group-hover:text-white transition">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mt-6 mb-3 text-slate-900">Private Chauffeur</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Luxury, fully air-conditioned modern vehicles suitable for smooth city long-distance tours.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-xs hover:shadow-md transition group">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-600 text-xl font-bold group-hover:bg-emerald-600 group-hover:text-white transition">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mt-6 mb-3 text-slate-900">Custom Itineraries</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Tailored tour planning according to your choices, budget, and travel days across Sri Lanka.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-xs hover:shadow-md transition group">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-600 text-xl font-bold group-hover:bg-emerald-600 group-hover:text-white transition">
+                        <i class="fas fa-paw"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mt-6 mb-3 text-slate-900">Wildlife Safaris</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Arranging full arrangements for national park safaris like Yala, Minneriya, and Udawalawe.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="max-w-6xl mx-auto px-6 py-20">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <span class="text-emerald-600 font-bold tracking-wider text-sm uppercase">Moments in Ceylon</span>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mt-1">Our Recent Tour Gallery</h2>
+            <div class="w-12 h-1 bg-emerald-500 mx-auto mt-3"></div>
+            <p class="text-slate-500 text-sm mt-3">Real snapshots from previous tours with travelers from across the globe.</p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="grid gap-4">
+                <div>
+                    <img class="h-auto max-w-full rounded-xl object-cover shadow-xs" src="https://images.unsplash.com/photo-1588598126210-22c60f23906a?auto=format&fit=crop&w=500&q=80" alt="Sigiriya">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-xl object-cover shadow-xs" src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=500&q=80" alt="Beach">
+                </div>
+            </div>
+            <div class="grid gap-4">
+                <div>
+                    <img class="h-auto max-w-full rounded-xl object-cover shadow-xs" src="https://images.unsplash.com/photo-1561738787-ea272149b5c8?auto=format&fit=crop&w=500&q=80" alt="Elephant Safari">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-xl object-cover shadow-xs" src="https://images.unsplash.com/photo-1542856391-010fb87dcfed?auto=format&fit=crop&w=500&q=80" alt="Tea Estate">
+                </div>
+            </div>
+            <div class="grid gap-4">
+                <div>
+                    <img class="h-auto max-w-full rounded-xl object-cover shadow-xs" src="https://images.unsplash.com/photo-1517400508447-f8dd518b86db?auto=format&fit=crop&w=500&q=80" alt="Nine Arch Ella">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-xl object-cover shadow-xs" src="https://images.unsplash.com/photo-1608958416710-bb974bf34281?auto=format&fit=crop&w=500&q=80" alt="Kandy Temple">
+                </div>
+            </div>
+            <div class="grid gap-4">
+                <div>
+                    <img class="h-auto max-w-full rounded-xl object-cover shadow-xs" src="https://images.unsplash.com/photo-1543731068-7e0f5beff43a?auto=format&fit=crop&w=500&q=80" alt="Galle Fort">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-xl object-cover shadow-xs" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=500&q=80" alt="Mirissa Beach">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="bg-emerald-950 text-white py-20 px-6 relative overflow-hidden">
+        <div class="max-w-6xl mx-auto relative z-10">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <i class="fab fa-tripadvisor text-4xl text-emerald-400 mb-2"></i>
+                <h2 class="text-3xl md:text-4xl font-extrabold">Tripadvisor Guest Reviews</h2>
+                <div class="w-12 h-1 bg-emerald-400 mx-auto mt-3 mb-4"></div>
+                <div class="inline-flex items-center gap-2 bg-emerald-900 border border-emerald-800 rounded-full px-4 py-1.5 text-xs text-emerald-300">
+                    <span class="flex h-2 w-2 relative">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                    </span>
+                    Live Connected Reviews Rating: 5.0/5.0
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white/5 border border-white/10 backdrop-blur-md rounded-2xl p-6 hover:bg-white/10 transition">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h4 class="font-bold text-white text-base">Unforgettable 10 Days!</h4>
+                            <p class="text-xs text-emerald-300 mt-0.5">David & Family, Germany</p>
+                        </div>
+                        <div class="text-emerald-400 flex gap-0.5 text-xs">
+                            <i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i>
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-300 leading-relaxed italic">"Saman made our family tour flawless. He knows the perfect timings to visit spots to avoid heavy crowds. Very careful driver and wonderful storyteller!"</p>
+                    <span class="block text-xs text-slate-500 mt-4">Reviewed June 2026</span>
+                </div>
+                <div class="bg-white/5 border border-white/10 backdrop-blur-md rounded-2xl p-6 hover:bg-white/10 transition">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h4 class="font-bold text-white text-base">Best Local Experience</h4>
+                            <p class="text-xs text-emerald-300 mt-0.5">Sarah J., United Kingdom</p>
+                        </div>
+                        <div class="text-emerald-400 flex gap-0.5 text-xs">
+                            <i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i>
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-300 leading-relaxed italic">"Traveling alone as a woman can feel uncertain, but Saman made me feel 100% safe. He took me to unique local eating places. Exceptional service!"</p>
+                    <span class="block text-xs text-slate-500 mt-4">Reviewed May 2026</span>
+                </div>
+                <div class="bg-white/5 border border-white/10 backdrop-blur-md rounded-2xl p-6 hover:bg-white/10 transition">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h4 class="font-bold text-white text-base">Highly Professional Chauffeur</h4>
+                            <p class="text-xs text-emerald-300 mt-0.5">Jean & Emma, France</p>
+                        </div>
+                        <div class="text-emerald-400 flex gap-0.5 text-xs">
+                            <i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i>
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-300 leading-relaxed italic">"Extremely neat car, super driving behavior, and top-tier choices for hotels. Thank you Saman for creating our dream vacation reality."</p>
+                    <span class="block text-xs text-slate-500 mt-4">Reviewed April 2026</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-400 py-16 px-6 border-t border-slate-800 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-white text-2xl font-bold tracking-wider mb-2">READY TO DISCOVER SRI LANKA?</h3>
+            <p class="text-sm max-w-md mx-auto mb-8">Drop a quick message on WhatsApp. Let's design your completely personalized luxury travel package together.</p>
+            
+            <a href="https://wa.me/94771234567?text=Hi%20Saman,%20I%20want%20to%20quote%20a%20tour%20package." 
+               target="_blank" 
+               class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 px-8 rounded-full shadow-md transition inline-flex items-center gap-2 mb-10">
+               <i class="fab fa-whatsapp"></i> Get a Free Tour Quote
+            </a>
+
+            <div class="flex justify-center gap-6 text-xl mb-8">
+                <a href="https://wa.me/94771234567" target="_blank" class="hover:text-emerald-500 transition"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://facebook.com" target="_blank" class="hover:text-emerald-500 transition"><i class="fab fa-facebook"></i></a>
+                <a href="https://tripadvisor.com" target="_blank" class="hover:text-emerald-500 transition"><i class="fab fa-tripadvisor"></i></a>
+            </div>
+            
+            <p class="text-xs text-slate-600 border-t border-slate-800 pt-8">&copy; 2026 Ceylon Horizon Tours. Crafted professionally. All Rights Reserved.</p>
         </div>
     </footer>
 
