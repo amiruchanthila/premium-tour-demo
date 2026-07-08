@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ceylon Horizon Tours | Premium Private Guide Sri Lanka</title>
+    <title>Ceylon Adventurer | Premium Private Tour Guide Sri Lanka</title>
     <!-- Tailwind CSS v4 -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- FontAwesome Icons -->
@@ -11,7 +11,6 @@
     <!-- AOS Animations CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
-        /* Smooth hover transition for gallery images */
         .gallery-img {
             transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
         }
@@ -25,10 +24,10 @@
     <!-- Navbar Section -->
     <nav class="bg-white/90 backdrop-blur-md shadow-xs sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-xl font-black tracking-widest text-emerald-600">CEYLON HORIZON</a>
+            <a href="#" class="text-xl font-black tracking-widest text-emerald-600">CEYLON TOUR DEMO</a>
             <div class="hidden md:flex gap-6 font-medium text-slate-600">
-                <a href="#about" class="hover:text-emerald-600 transition">About Me</a>
-                <a href="#services" class="hover:text-emerald-600 transition">Services</a>
+                <a href="#about" class="hover:text-emerald-600 transition">About Us</a>
+                <a href="#services" class="hover:text-emerald-600 transition">Our Services</a>
                 <a href="#gallery" class="hover:text-emerald-600 transition">Gallery</a>
                 <a href="#reviews" class="hover:text-emerald-600 transition">Reviews</a>
             </div>
@@ -40,48 +39,59 @@
         </div>
     </nav>
 
-    <!-- Hero Section (Intro Animation) -->
-    <header class="relative bg-slate-900 text-white py-36 px-6 text-center overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1546708973-b339540b5162?auto=format&fit=crop&w=1920&q=80" alt="Sri Lanka Tour" class="absolute inset-0 w-full h-full object-cover opacity-35 animate-pulse" style="animation-duration: 8s;">
+    <!-- Premium Hero Section -->
+    <header class="relative bg-slate-900 text-white py-40 px-6 text-center overflow-hidden">
+        <!-- ලංකාවේ සීගිරිය පේන පට්ටම Background පින්තූරයක් -->
+        <img src="https://images.unsplash.com/photo-1588598126210-22c60f23906a?auto=format&fit=crop&w=1920&q=80" alt="Sri Lanka Tour" class="absolute inset-0 w-full h-full object-cover opacity-30 animate-pulse" style="animation-duration: 10s;">
+        <div class="absolute inset-0 bg-gradient-to-b from-slate-900/50 via-slate-950/40 to-slate-950/80"></div>
+        
         <div class="relative max-w-3xl mx-auto z-10" data-aos="zoom-out" data-aos-duration="1200">
-            <span class="text-emerald-400 font-bold tracking-widest text-xs md:text-sm uppercase bg-emerald-500/10 px-4 py-1.5 rounded-full border border-emerald-500/20">SLTDA Registered Chauffeur & Guide</span>
-            <h1 class="text-4xl md:text-6xl font-extrabold mt-4 leading-tight">Crafting Unforgettable Sri Lankan Journeys</h1>
-            <p class="mt-4 text-base md:text-xl text-slate-300 max-w-2xl mx-auto">Explore hidden gems, pristine coastlines, and ancient heritage with a professional, safe, and friendly private guide.</p>
+            <span class="text-emerald-400 font-bold tracking-widest text-xs md:text-sm uppercase bg-emerald-500/10 px-4 py-1.5 rounded-full border border-emerald-500/20 inline-flex items-center gap-2">
+                <i class="fas fa-map-marker-alt"></i> Your Premium Demo Tour Website
+            </span>
+            <h1 class="text-4xl md:text-6xl font-extrabold mt-6 leading-tight tracking-tight text-white drop-shadow-md">Explore Sri Lanka With <span class="text-emerald-400">Expert Guides</span></h1>
+            <p class="mt-4 text-base md:text-xl text-slate-300 max-w-2xl mx-auto">Experience the culture, pristine nature, and hidden gems with a personalized travel plan designed just for you.</p>
+            
             <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <a href="https://wa.me/94771234567?text=Hi!%20I%20want%20to%20plan%20a%20tour%20with%20you." 
+                <a href="https://wa.me/94771234567?text=Hi!%20I%20saw%20your%20demo%20website%20and%20want%20to%20plan%20a%20tour." 
                    target="_blank" 
                    class="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-full shadow-lg inline-flex items-center gap-3 transition transform hover:scale-105 w-full sm:w-auto justify-center">
-                   <i class="fab fa-whatsapp text-xl"></i> Book via WhatsApp
+                   <i class="fab fa-whatsapp text-xl"></i> Demo WhatsApp Booking
                 </a>
                 <a href="#gallery" class="bg-white/10 hover:bg-white/20 text-white border border-white/20 font-semibold py-4 px-8 rounded-full shadow-md inline-flex items-center transition w-full sm:w-auto justify-center">
-                    View Recent Tours
+                    View Gallery Showcase
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- About Me Section -->
+    <!-- About Section -->
     <section id="about" class="max-w-6xl mx-auto px-6 py-20 overflow-hidden">
         <div class="grid md:grid-cols-2 gap-12 items-center">
             <div class="relative" data-aos="fade-right" data-aos-duration="1000">
                 <div class="absolute -inset-1 bg-gradient-to-r border-emerald-500 to-teal-500 rounded-2xl blur opacity-30"></div>
-                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80" alt="Tour Guide Saman" class="relative rounded-2xl shadow-md object-cover h-[450px] w-full">
+                <!-- Ella Nine Arch පින්තූරය -->
+                <img src="https://images.unsplash.com/photo-1546708973-b339540b5162?auto=format&fit=crop&w=800&q=80" alt="Sri Lanka Tourism" class="relative rounded-2xl shadow-md object-cover h-[450px] w-full">
             </div>
             <div data-aos="fade-left" data-aos-duration="1000">
-                <span class="text-emerald-600 font-bold tracking-wider text-sm uppercase">Your Local Companion</span>
-                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mt-1">Ayubowan! I am Saman</h2>
+                <span class="text-emerald-600 font-bold tracking-wider text-sm uppercase">Professional Tour Guiding</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mt-1">Ayubowan & Welcome!</h2>
                 <div class="w-12 h-1 bg-emerald-500 mt-3 mb-6"></div>
                 <p class="text-slate-600 text-lg leading-relaxed mb-6">
-                    With over 8 years of active experience in guiding international travelers across Sri Lanka, I specialize in private tailor-made tours. Whether you travel solo, as a couple, or with family, I provide seamless travel management with safety as the topmost priority.
+                    This section showcases your professional travel profile. You can specialize in multi-day private tours, thrilling outdoor adventures, cultural round-trips, hiking, camping, and incredible wildlife safaris all over paradise Sri Lanka.
                 </p>
-                <div class="grid grid-cols-2 gap-4 border-t border-slate-200 pt-6">
+                <div class="grid grid-cols-3 gap-4 border-t border-slate-200 pt-6 text-center">
                     <div>
-                        <h4 class="font-bold text-slate-900 text-2xl">8+</h4>
-                        <p class="text-sm text-slate-500">Years Experience</p>
+                        <h4 class="font-bold text-slate-900 text-2xl">5.0</h4>
+                        <p class="text-xs text-slate-500">Tripadvisor Rating</p>
                     </div>
                     <div>
-                        <h4 class="font-bold text-slate-900 text-2xl">450+</h4>
-                        <p class="text-sm text-slate-500">Happy Groups</p>
+                        <h4 class="font-bold text-slate-900 text-2xl">50+</h4>
+                        <p class="text-xs text-slate-500">Happy Reviews</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-900 text-2xl">100%</h4>
+                        <p class="text-xs text-slate-500">Tailor-Made</p>
                     </div>
                 </div>
             </div>
@@ -92,177 +102,190 @@
     <section id="services" class="bg-slate-100 py-20 px-6 overflow-hidden">
         <div class="max-w-6xl mx-auto">
             <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
-                <span class="text-emerald-600 font-bold tracking-wider text-sm uppercase">What I Offer</span>
-                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mt-1">Premium Guiding Services</h2>
+                <span class="text-emerald-600 font-bold tracking-wider text-sm uppercase">What You Can Offer</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mt-1">Featured Adventures Showcase</h2>
                 <div class="w-12 h-1 bg-emerald-500 mx-auto mt-3"></div>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- Service 1 -->
                 <div class="bg-white p-8 rounded-2xl shadow-xs hover:shadow-md transition group" data-aos="fade-up" data-aos-delay="100">
                     <div class="w-12 h-12 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-600 text-xl font-bold group-hover:bg-emerald-600 group-hover:text-white transition">
-                        <i class="fas fa-car"></i>
+                        <i class="fas fa-hiking"></i>
                     </div>
-                    <h3 class="text-xl font-bold mt-6 mb-3 text-slate-900">Private Chauffeur</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">Luxury, fully air-conditioned modern vehicles suitable for smooth city long-distance tours.</p>
+                    <h3 class="text-xl font-bold mt-6 mb-3 text-slate-900">Hiking & Camping</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Experience unforgettable nights under the stars and scenic morning hikes around beautiful mountain ranges.</p>
                 </div>
-                <!-- Service 2 -->
                 <div class="bg-white p-8 rounded-2xl shadow-xs hover:shadow-md transition group" data-aos="fade-up" data-aos-delay="200">
                     <div class="w-12 h-12 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-600 text-xl font-bold group-hover:bg-emerald-600 group-hover:text-white transition">
-                        <i class="fas fa-route"></i>
+                        <i class="fas fa-mountain"></i>
                     </div>
-                    <h3 class="text-xl font-bold mt-6 mb-3 text-slate-900">Custom Itineraries</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">Tailored tour planning according to your choices, budget, and travel days across Sri Lanka.</p>
+                    <h3 class="text-xl font-bold mt-6 mb-3 text-slate-900">Adventure & Activities</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">For the thrill-seekers! High-quality, safe adventure tours based around popular tourist hotspots.</p>
                 </div>
-                <!-- Service 3 -->
                 <div class="bg-white p-8 rounded-2xl shadow-xs hover:shadow-md transition group" data-aos="fade-up" data-aos-delay="300">
                     <div class="w-12 h-12 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-600 text-xl font-bold group-hover:bg-emerald-600 group-hover:text-white transition">
-                        <i class="fas fa-paw"></i>
+                        <i class="fas fa-leaf"></i>
                     </div>
-                    <h3 class="text-xl font-bold mt-6 mb-3 text-slate-900">Wildlife Safaris</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">Arranging full arrangements for national park safaris like Yala, Minneriya, and Udawalawe.</p>
+                    <h3 class="text-xl font-bold mt-6 mb-3 text-slate-900">Nature & Wildlife Safaris</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Get closer to majestic Sri Lankan elephants and explore beautiful, untouched national parks.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Recent Tours Gallery -->
+    <!-- Recent Tours Gallery (ලංකාවේ සුපිරිම තැන් 8ක Live පින්තූර) -->
     <section id="gallery" class="max-w-6xl mx-auto px-6 py-20">
         <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
-            <span class="text-emerald-600 font-bold tracking-wider text-sm uppercase">Moments in Ceylon</span>
-            <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mt-1">Our Recent Tour Gallery</h2>
+            <span class="text-emerald-600 font-bold tracking-wider text-sm uppercase">Beautiful Destinations</span>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mt-1">Sri Lanka Gallery Showcase</h2>
             <div class="w-12 h-1 bg-emerald-500 mx-auto mt-3"></div>
         </div>
 
-        <!-- Premium Modern Photo Grid with Zoom Animations -->
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div class="grid gap-4">
+                <!-- Sigiriya -->
                 <div class="gallery-container rounded-xl overflow-hidden shadow-xs" data-aos="zoom-in" data-aos-delay="100">
-                    <img class="gallery-img h-auto max-w-full object-cover" src="https://images.unsplash.com/photo-1588598126210-22c60f23906a?auto=format&fit=crop&w=500&q=80" alt="Sigiriya">
+                    <img class="gallery-img h-auto max-w-full object-cover" src="https://images.unsplash.com/photo-1588598126210-22c60f23906a?auto=format&fit=crop&w=500&q=80" alt="Sigiriya Rock">
                 </div>
+                <!-- Mirissa Beach -->
                 <div class="gallery-container rounded-xl overflow-hidden shadow-xs" data-aos="zoom-in" data-aos-delay="150">
-                    <img class="gallery-img h-auto max-w-full object-cover" src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=500&q=80" alt="Beach">
+                    <img class="gallery-img h-auto max-w-full object-cover" src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=500&q=80" alt="Mirissa Beach">
                 </div>
             </div>
             <div class="grid gap-4">
+                <!-- Elephant Safari -->
                 <div class="gallery-container rounded-xl overflow-hidden shadow-xs" data-aos="zoom-in" data-aos-delay="200">
                     <img class="gallery-img h-auto max-w-full object-cover" src="https://images.unsplash.com/photo-1561738787-ea272149b5c8?auto=format&fit=crop&w=500&q=80" alt="Elephant Safari">
                 </div>
+                <!-- Tea Estate Nuwara Eliya -->
                 <div class="gallery-container rounded-xl overflow-hidden shadow-xs" data-aos="zoom-in" data-aos-delay="250">
                     <img class="gallery-img h-auto max-w-full object-cover" src="https://images.unsplash.com/photo-1542856391-010fb87dcfed?auto=format&fit=crop&w=500&q=80" alt="Tea Estate">
                 </div>
             </div>
             <div class="grid gap-4">
+                <!-- Nine Arch Ella -->
                 <div class="gallery-container rounded-xl overflow-hidden shadow-xs" data-aos="zoom-in" data-aos-delay="300">
-                    <img class="gallery-img h-auto max-w-full object-cover" src="https://images.unsplash.com/photo-1517400508447-f8dd518b86db?auto=format&fit=crop&w=500&q=80" alt="Nine Arch Ella">
+                    <img class="gallery-img h-auto max-w-full object-cover" src="https://images.unsplash.com/photo-1546708973-b339540b5162?auto=format&fit=crop&w=500&q=80" alt="Nine Arch Ella">
                 </div>
+                <!-- Kandy Temple -->
                 <div class="gallery-container rounded-xl overflow-hidden shadow-xs" data-aos="zoom-in" data-aos-delay="350">
                     <img class="gallery-img h-auto max-w-full object-cover" src="https://images.unsplash.com/photo-1608958416710-bb974bf34281?auto=format&fit=crop&w=500&q=80" alt="Kandy Temple">
                 </div>
             </div>
             <div class="grid gap-4">
+                <!-- Galle Fort -->
                 <div class="gallery-container rounded-xl overflow-hidden shadow-xs" data-aos="zoom-in" data-aos-delay="400">
                     <img class="gallery-img h-auto max-w-full object-cover" src="https://images.unsplash.com/photo-1543731068-7e0f5beff43a?auto=format&fit=crop&w=500&q=80" alt="Galle Fort">
                 </div>
+                <!-- Hikkaduwa Beach -->
                 <div class="gallery-container rounded-xl overflow-hidden shadow-xs" data-aos="zoom-in" data-aos-delay="450">
-                    <img class="gallery-img h-auto max-w-full object-cover" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=500&q=80" alt="Mirissa Beach">
+                    <img class="gallery-img h-auto max-w-full object-cover" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=500&q=80" alt="Hikkaduwa Beach">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Tripadvisor Reviews & Ratings Section -->
+    <!-- Tripadvisor Section -->
     <section id="reviews" class="bg-emerald-950 text-white py-20 px-6 relative overflow-hidden">
         <div class="max-w-6xl mx-auto relative z-10">
             <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
-                <i class="fab fa-tripadvisor text-4xl text-emerald-400 mb-2"></i>
-                <h2 class="text-3xl md:text-4xl font-extrabold">Tripadvisor Guest Reviews</h2>
+                <i class="fab fa-tripadvisor text-5xl text-emerald-400 mb-2"></i>
+                <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">Demo Guest Reviews Integration</h2>
                 <div class="w-12 h-1 bg-emerald-400 mx-auto mt-3 mb-4"></div>
-                <div class="inline-flex items-center gap-2 bg-emerald-900 border border-emerald-800 rounded-full px-4 py-1.5 text-xs text-emerald-300">
-                    <span class="flex h-2 w-2 relative">
-                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                      <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
-                    </span>
-                    Live Connected Reviews Rating: 5.0/5.0
+                
+                <div class="inline-flex items-center gap-2 bg-emerald-900/50 border border-emerald-800 rounded-full px-5 py-2 text-sm text-emerald-300 shadow-lg">
+                    <i class="fas fa-star text-amber-400"></i> Tripadvisor Integration Section
                 </div>
+                <p class="mt-3 text-slate-300 text-sm">When your site goes live, your real Tripadvisor reviews and ratings will sync automatically right here!</p>
             </div>
 
             <!-- Review Cards Grid -->
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Review 1 -->
-                <div class="bg-white/5 border border-white/10 backdrop-blur-md rounded-2xl p-6 hover:bg-white/10 transition" data-aos="fade-right" data-aos-duration="1000">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white/5 border border-white/10 backdrop-blur-md rounded-2xl p-6 hover:bg-white/10 transition" data-aos="fade-up" data-aos-delay="100">
                     <div class="flex justify-between items-start mb-4">
                         <div>
-                            <h4 class="font-bold text-white text-base">Unforgettable 10 Days!</h4>
-                            <p class="text-xs text-emerald-300 mt-0.5">David & Family, Germany</p>
+                            <h4 class="font-bold text-white text-base">Example Review Title</h4>
+                            <p class="text-xs text-emerald-400 mt-0.5">John Doe, Germany</p>
                         </div>
-                        <div class="text-emerald-400 flex gap-0.5 text-xs">
+                        <div class="text-green-400 flex gap-0.5 text-xs">
                             <i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i>
                         </div>
                     </div>
-                    <p class="text-sm text-slate-300 leading-relaxed italic">"Saman made our family tour flawless. He knows the perfect timings to visit spots to avoid heavy crowds. Very careful driver and wonderful storyteller!"</p>
-                    <span class="block text-xs text-slate-500 mt-4">Reviewed June 2026</span>
+                    <p class="text-sm text-slate-300 leading-relaxed italic">"This is a sample review placeholder. Your actual clients' amazing words and 5-star ratings from Tripadvisor will be displayed beautifully in this slider."</p>
                 </div>
-                <!-- Review 2 -->
-                <div class="bg-white/5 border border-white/10 backdrop-blur-md rounded-2xl p-6 hover:bg-white/10 transition" data-aos="fade-up" data-aos-duration="1000">
+                <div class="bg-white/5 border border-white/10 backdrop-blur-md rounded-2xl p-6 hover:bg-white/10 transition" data-aos="fade-up" data-aos-delay="200">
                     <div class="flex justify-between items-start mb-4">
                         <div>
-                            <h4 class="font-bold text-white text-base">Best Local Experience</h4>
-                            <p class="text-xs text-emerald-300 mt-0.5">Sarah J., United Kingdom</p>
+                            <h4 class="font-bold text-white text-base">Example Review Title</h4>
+                            <p class="text-xs text-emerald-400 mt-0.5">Jane Smith, UK</p>
                         </div>
-                        <div class="text-emerald-400 flex gap-0.5 text-xs">
+                        <div class="text-green-400 flex gap-0.5 text-xs">
                             <i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i>
                         </div>
                     </div>
-                    <p class="text-sm text-slate-300 leading-relaxed italic">"Traveling alone as a woman can feel uncertain, but Saman made me feel 100% safe. He took me to unique local eating places. Exceptional service!"</p>
-                    <span class="block text-xs text-slate-500 mt-4">Reviewed May 2026</span>
+                    <p class="text-sm text-slate-300 leading-relaxed italic">"This is a sample review placeholder. Your actual clients' amazing words and 5-star ratings from Tripadvisor will be displayed beautifully in this slider."</p>
                 </div>
-                <!-- Review 3 -->
-                <div class="bg-white/5 border border-white/10 backdrop-blur-md rounded-2xl p-6 hover:bg-white/10 transition" data-aos="fade-left" data-aos-duration="1000">
+                <div class="bg-white/5 border border-white/10 backdrop-blur-md rounded-2xl p-6 hover:bg-white/10 transition" data-aos="fade-up" data-aos-delay="300">
                     <div class="flex justify-between items-start mb-4">
                         <div>
-                            <h4 class="font-bold text-white text-base">Highly Professional Chauffeur</h4>
-                            <p class="text-xs text-emerald-300 mt-0.5">Jean & Emma, France</p>
+                            <h4 class="font-bold text-white text-base">Example Review Title</h4>
+                            <p class="text-xs text-emerald-400 mt-0.5">Alex Travel, France</p>
                         </div>
-                        <div class="text-emerald-400 flex gap-0.5 text-xs">
+                        <div class="text-green-400 flex gap-0.5 text-xs">
                             <i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i>
                         </div>
                     </div>
-                    <p class="text-sm text-slate-300 leading-relaxed italic">"Extremely neat car, super driving behavior, and top-tier choices for hotels. Thank you Saman for creating our dream vacation reality."</p>
-                    <span class="block text-xs text-slate-500 mt-4">Reviewed April 2026</span>
+                    <p class="text-sm text-slate-300 leading-relaxed italic">"This is a sample review placeholder. Your actual clients' amazing words and 5-star ratings from Tripadvisor will be displayed beautifully in this slider."</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Call To Action Footer -->
+    <!-- Quick FAQ Section -->
+    <section class="max-w-4xl mx-auto px-6 py-20">
+        <div class="text-center mb-12" data-aos="fade-up">
+            <h2 class="text-3xl font-extrabold text-slate-900">Frequently Asked Questions</h2>
+            <div class="w-12 h-1 bg-emerald-500 mx-auto mt-3"></div>
+        </div>
+        <div class="space-y-4" data-aos="fade-up">
+            <div class="bg-white p-6 rounded-xl shadow-xs border border-slate-100">
+                <h4 class="font-bold text-slate-900 mb-2 flex items-center gap-2"><i class="far fa-question-circle text-emerald-500"></i> Are your tours customizable?</h4>
+                <p class="text-sm text-slate-600 leading-relaxed">Yes, 100%! All tour packages can be completely tailored to match your clients' requirements, budget, and preference.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-xs border border-slate-100">
+                <h4 class="font-bold text-slate-900 mb-2 flex items-center gap-2"><i class="far fa-question-circle text-emerald-500"></i> Is safety gear provided for activities?</h4>
+                <p class="text-sm text-slate-600 leading-relaxed">Absolutely. For all high-intensity adventure tours, certified safety gear and experienced instructors are always provided.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="bg-slate-900 text-slate-400 py-16 px-6 border-t border-slate-800 text-center">
         <div class="max-w-4xl mx-auto" data-aos="fade-up">
-            <h3 class="text-white text-2xl font-bold tracking-wider mb-2">READY TO DISCOVER SRI LANKA?</h3>
-            <p class="text-sm max-w-md mx-auto mb-8">Drop a quick message on WhatsApp. Let's design your completely personalized luxury travel package together.</p>
+            <h3 class="text-white text-2xl font-bold tracking-wider mb-2">READY TO BUILD YOUR TOUR WEBSITE?</h3>
+            <p class="text-sm max-w-md mx-auto mb-8">This is a concept design showcase. Let's customize it with your own brand details, social media links, and packages.</p>
             
-            <a href="https://wa.me/94771234567?text=Hi%20Saman,%20I%20want%20to%20quote%20a%20tour%20package." 
+            <a href="https://wa.me/94771234567?text=Hi!%20I%2520want%2520to%2520activate%2520this%2520tour%2520website." 
                target="_blank" 
                class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 px-8 rounded-full shadow-md transition inline-flex items-center gap-2 mb-10">
-               <i class="fab fa-whatsapp"></i> Get a Free Tour Quote
+               <i class="fab fa-whatsapp"></i> Contact Developer For Activation
             </a>
 
             <div class="flex justify-center gap-6 text-xl mb-8">
-                <a href="https://wa.me/94771234567" target="_blank" class="hover:text-emerald-500 transition"><i class="fab fa-whatsapp"></i></a>
-                <a href="https://facebook.com" target="_blank" class="hover:text-emerald-500 transition"><i class="fab fa-facebook"></i></a>
-                <a href="https://tripadvisor.com" target="_blank" class="hover:text-emerald-500 transition"><i class="fab fa-tripadvisor"></i></a>
+                <a href="#" class="hover:text-emerald-500 transition"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" class="hover:text-emerald-500 transition"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="hover:text-emerald-500 transition"><i class="fab fa-tripadvisor"></i></a>
             </div>
             
-            <p class="text-xs text-slate-600 border-t border-slate-800 pt-8">&copy; 2026 Ceylon Horizon Tours. Crafted professionally. All Rights Reserved.</p>
+            <p class="text-xs text-slate-600 border-t border-slate-800 pt-8">&copy; 2026 Premium Tour Showcase. Built for Professional Guides.</p>
         </div>
     </footer>
 
-    <!-- AOS Animations JS Library -->
+    <!-- AOS Animations Library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        // Initialize AOS animations
         AOS.init({
-            once: true, // Animates only once when scrolling down
+            once: true,
             mirror: false
         });
     </script>
