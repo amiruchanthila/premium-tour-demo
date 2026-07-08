@@ -415,40 +415,43 @@
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            once: true,
-            mirror: false
-        });
+   <script>
+    // ඇනිමේෂන් හැමතිස්සෙම වැඩ කරන්න මෙන්න මේක අප්ඩේට් කළා මචන්
+    AOS.init({
+        duration: 1000,  // ඇනිමේෂන් එක සිද්ධ වෙන්න යන වෙලාව (මිලිසෙකන්ඩ්)
+        once: false,     // true වෙනුවට false දාන්න (එතකොට හැම පාරම ඇනිමේෂන් එක වැඩ කරනවා)
+        mirror: true,    // false වෙනුවට true දාන්න (උඩට ස්ක්‍රෝල් කරද්දිත් ඇනිමේෂන් එක පේන්න)
+        offset: 100      // ඇනිමේෂන් එක ස්ටාර්ට් වෙන්න ඕන ස්ක්‍රෝල් සීමාව
+    });
 
-        function sendToWhatsApp(event) {
-            event.preventDefault();
-            
-            // Saman's Real Phone Number (Remember to replace this!)
-            const whatsappNumber = "94722914390"; 
-            
-            const name = document.getElementById('clientName').value;
-            const country = document.getElementById('clientCountry').value;
-            const arrival = document.getElementById('arrivalDate').value;
-            const departure = document.getElementById('departureDate').value;
-            const travelers = document.getElementById('travelersCount').value;
-            const interest = document.getElementById('tourInterest').value;
-            const vehicle = document.getElementById('vehicleType').value;
-            const notes = document.getElementById('specialNotes').value;
-            
-            const message = `Hello Saman! I would like to book a tour with you.%0A%0A` +
-                            `*Booking Details:*%0A` +
-                            `• *Name:* ${name}%0A` +
-                            `• *Country:* ${country}%0A` +
-                            `• *Arrival Date:* ${arrival}%0A` +
-                            `• *Departure Date:* ${departure}%0A` +
-                            `• *Travelers:* ${travelers} Persons%0A` +
-                            `• *Tour Interest:* ${interest}%0A` +
-                            `• *Vehicle Preference:* ${vehicle}%0A` +
-                            `• *Special Notes:* ${notes ? notes : 'None'}`;
-            
-            window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
-        }
-    </script>
+    function sendToWhatsApp(event) {
+        event.preventDefault();
+        
+        // Saman's Real Phone Number (Remember to replace this!)
+        const whatsappNumber = "94722914390"; 
+        
+        const name = document.getElementById('clientName').value;
+        const country = document.getElementById('clientCountry').value;
+        const arrival = document.getElementById('arrivalDate').value;
+        const departure = document.getElementById('departureDate').value;
+        const travelers = document.getElementById('travelersCount').value;
+        const interest = document.getElementById('tourInterest').value;
+        const vehicle = document.getElementById('vehicleType').value;
+        const notes = document.getElementById('specialNotes').value;
+        
+        const message = `Hello Saman! I would like to book a tour with you.%0A%0A` +
+                        `*Booking Details:*%0A` +
+                        `• *Name:* ${name}%0A` +
+                        `• *Country:* ${country}%0A` +
+                        `• *Arrival Date:* ${arrival}%0A` +
+                        `• *Departure Date:* ${departure}%0A` +
+                        `• *Travelers:* ${travelers} Persons%0A` +
+                        `• *Tour Interest:* ${interest}%0A` +
+                        `• *Vehicle Preference:* ${vehicle}%0A` +
+                        `• *Special Notes:* ${notes ? notes : 'None'}`;
+        
+        window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
+    }
+</script>
 </body>
 </html>
