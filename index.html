@@ -29,61 +29,54 @@
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased scroll-smooth overflow-x-hidden">
 
-<!-- Clean Responsive Navbar -->
-    <nav class="bg-white border-b border-slate-100 relative z-50 shadow-xs">
+<!-- Complete Modern Responsive Navbar (No JS Required) -->
+    <nav class="bg-white border-b border-slate-100 relative z-50">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
             
-            <!-- Logo Area (Stays crisp and neat on all screens) -->
-            <a href="#" class="text-lg md:text-xl font-black tracking-widest text-emerald-600 uppercase whitespace-nowrap">
+            <!-- Logo Area -->
+            <a href="#" class="text-base sm:text-lg md:text-xl font-black tracking-widest text-emerald-600 uppercase whitespace-nowrap">
                 CEYLON HORIZON
             </a>
             
-            <!-- Desktop Menu (Hidden on Mobile, Perfect Layout on Desktop) -->
+            <!-- Desktop Menu (Hidden on Mobile) -->
             <div class="hidden md:flex items-center gap-8 font-semibold text-sm tracking-wide text-slate-600">
-                <a href="#about" class="relative py-1 transition-colors hover:text-emerald-600 group">
-                    About Me
-                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-emerald-500 transition-all duration-300 group-hover:w-full"></span>
-                </a>
-                <a href="#services" class="relative py-1 transition-colors hover:text-emerald-600 group">
-                    Services
-                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-emerald-500 transition-all duration-300 group-hover:w-full"></span>
-                </a>
-                <a href="#gallery" class="relative py-1 transition-colors hover:text-emerald-600 group">
-                    Gallery
-                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-emerald-500 transition-all duration-300 group-hover:w-full"></span>
-                </a>
-                <a href="#reviews" class="relative py-1 transition-colors hover:text-emerald-600 group">
-                    Reviews
-                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-emerald-500 transition-all duration-300 group-hover:w-full"></span>
-                </a>
+                <a href="#about" class="transition-colors hover:text-emerald-600">About Me</a>
+                <a href="#services" class="transition-colors hover:text-emerald-600">Services</a>
+                <a href="#gallery" class="transition-colors hover:text-emerald-600">Gallery</a>
+                <a href="#reviews" class="transition-colors hover:text-emerald-600">Reviews</a>
             </div>
             
-            <!-- Right Social Icons Area (Cleanly Aligned inside the row) -->
+            <!-- Right Actions (Icons + Custom Pure CSS Hamburger) -->
             <div class="flex items-center gap-4 text-lg text-slate-600">
-                <a href="https://wa.me/94771234567" target="_blank" class="hover:text-green-500 transition"><i class="fab fa-whatsapp"></i></a>
-                <a href="https://facebook.com" target="_blank" class="hover:text-blue-600 transition"><i class="fab fa-facebook"></i></a>
-                <a href="https://tripadvisor.com" target="_blank" class="hover:text-emerald-500 transition"><i class="fab fa-tripadvisor"></i></a>
+                <a href="https://wa.me/94771234567" target="_blank" class="hover:text-green-500 transition">
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.42 9.863-9.864.001-2.636-1.023-5.115-2.884-6.978C16.526 1.9 14.053.875 11.415.875 5.978.875 1.558 5.292 1.556 10.729c-.001 1.693.443 3.343 1.284 4.807l-.988 3.607 3.692-.969zm13.307-8.156c-.287-.144-1.701-.84-1.964-.936-.264-.096-.456-.144-.648.144-.192.288-.744.936-.912 1.129-.168.192-.336.216-.624.072-.288-.145-1.219-.45-2.321-1.433-.858-.766-1.437-1.714-1.605-2.002-.168-.288-.018-.444.126-.587.13-.13.288-.336.432-.504.144-.168.192-.288.288-.48.096-.192.048-.36-.024-.504-.072-.144-.648-1.56-.888-2.136-.234-.564-.473-.488-.648-.497-.168-.008-.36-.01-.552-.01-.192 0-.504.072-.768.36-.264.288-1.008.984-1.008 2.399 0 1.416 1.032 2.784 1.176 2.976.144.192 2.03 3.1 4.916 4.344.686.296 1.222.473 1.639.605.69.219 1.319.189 1.815.115.553-.083 1.701-.696 1.944-1.368.243-.672.243-1.248.172-1.368-.072-.12-.264-.192-.551-.336z"/></svg>
+                </a>
+                <a href="https://facebook.com" target="_blank" class="hover:text-blue-600 transition">
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                </a>
                 
-               
-
+                <!-- Pure CSS Mobile Menu Trigger (No JS Needed) -->
+                <label for="menu-toggle" class="md:hidden cursor-pointer p-1 hover:bg-slate-50 rounded-sm">
+                    <svg class="w-6 h-6 fill-none stroke-current stroke-2 text-slate-700" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </label>
+            </div>
         </div>
-    </nav>
-            
-            <!-- Social Icons with Modern Circle Background on Hover -->
-            <div class="flex gap-3 text-base text-slate-700">
-                <a href="https://wa.me/94771234567" target="_blank" class="w-9 h-9 flex items-center justify-center rounded-full hover:bg-green-50 hover:text-green-500 transition-all duration-200">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
-                <a href="https://facebook.com" target="_blank" class="w-9 h-9 flex items-center justify-center rounded-full hover:bg-blue-50 hover:text-blue-600 transition-all duration-200">
-                    <i class="fab fa-facebook"></i>
-                </a>
-                <a href="https://tripadvisor.com" target="_blank" class="w-9 h-9 flex items-center justify-center rounded-full hover:bg-emerald-50 hover:text-emerald-500 transition-all duration-200">
-                    <i class="fab fa-tripadvisor"></i>
-                </a>
+
+        <!-- Hidden Checkbox for CSS Toggle Trick -->
+        <input type="checkbox" id="menu-toggle" class="hidden peer" />
+
+        <!-- Mobile Dropdown Menu (Appears smoothly when clicking the hamburger icon) -->
+        <div class="hidden peer-checked:block md:hidden border-t border-slate-100 bg-slate-50 absolute left-0 right-0 top-full shadow-md">
+            <div class="flex flex-col font-semibold text-sm text-slate-700">
+                <a href="#about" class="px-6 py-3.5 hover:bg-emerald-50 hover:text-emerald-600 border-b border-slate-100/50">About Me</a>
+                <a href="#services" class="px-6 py-3.5 hover:bg-emerald-50 hover:text-emerald-600 border-b border-slate-100/50">Services</a>
+                <a href="#gallery" class="px-6 py-3.5 hover:bg-emerald-50 hover:text-emerald-600 border-b border-slate-100/50">Gallery</a>
+                <a href="#reviews" class="px-6 py-3.5 hover:bg-emerald-50 hover:text-emerald-600">Reviews</a>
             </div>
         </div>
     </nav>
-
     <!-- Hero Section -->
     <header class="relative bg-slate-900 text-white py-40 px-6 text-center overflow-hidden">
         <!-- Changed pulse to a beautiful slow zoom -->
