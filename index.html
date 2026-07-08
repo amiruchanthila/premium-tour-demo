@@ -4,17 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ceylon Horizon Tours | Premium Private Guide Sri Lanka</title>
-    <!-- Tailwind CSS v4 -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- AOS Animations CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
-        .gallery-img {
+        .gallery-img, .category-img {
             transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
         }
-        .gallery-container:hover .gallery-img {
+        .gallery-container:hover .gallery-img, .category-container:hover .category-img {
             transform: scale(1.08);
         }
         @keyframes slowZoom {
@@ -28,25 +25,21 @@
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased scroll-smooth overflow-x-hidden">
 
-    <!-- Complete Modern Responsive Navbar -->
     <nav class="bg-white border-b border-slate-100 relative z-50">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
             
-            <!-- Logo Area -->
             <a href="#" class="text-base sm:text-lg md:text-xl font-black tracking-widest text-emerald-600 uppercase whitespace-nowrap">
                 CEYLON HORIZON
             </a>
             
-            <!-- Desktop Menu -->
             <div class="hidden md:flex items-center gap-8 font-semibold text-sm tracking-wide text-slate-600">
                 <a href="#about" class="transition-colors hover:text-emerald-600">About Me</a>
-                <a href="#services" class="transition-colors hover:text-emerald-600">Services</a>
+                <a href="#categories" class="transition-colors hover:text-emerald-600">Tour Categories</a>
                 <a href="#gallery" class="transition-colors hover:text-emerald-600">Gallery</a>
                 <a href="#booking" class="transition-colors hover:text-emerald-600">Book Tour</a>
                 <a href="#reviews" class="transition-colors hover:text-emerald-600">Reviews</a>
             </div>
             
-            <!-- Right Actions -->
             <div class="flex items-center gap-4 text-lg text-slate-600">
                 <a href="https://wa.me/94771234567" target="_blank" class="hover:text-green-500 transition">
                     <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.42 9.863-9.864.001-2.636-1.023-5.115-2.884-6.978C16.526 1.9 14.053.875 11.415.875 5.978.875 1.558 5.292 1.556 10.729c-.001 1.693.443 3.343 1.284 4.807l-.988 3.607 3.692-.969zm13.307-8.156c-.287-.144-1.701-.84-1.964-.936-.264-.096-.456-.144-.648.144-.192.288-.744.936-.912 1.129-.168.192-.336.216-.624.072-.288-.145-1.219-.45-2.321-1.433-.858-.766-1.437-1.714-1.605-2.002-.168-.288-.018-.444.126-.587.13-.13.288-.336.432-.504.144-.168.192-.288.288-.48.096-.192.048-.36-.024-.504-.072-.144-.648-1.56-.888-2.136-.234-.564-.473-.488-.648-.497-.168-.008-.36-.01-.552-.01-.192 0-.504.072-.768.36-.264.288-1.008.984-1.008 2.399 0 1.416 1.032 2.784 1.176 2.976.144.192 2.03 3.1 4.916 4.344.686.296 1.222.473 1.639.605.69.219 1.319.189 1.815.115.553-.083 1.701-.696 1.944-1.368.243-.672.243-1.248.172-1.368-.072-.12-.264-.192-.551-.336z"/></svg>
@@ -68,7 +61,7 @@
         <div class="hidden peer-checked:block md:hidden border-t border-slate-100 bg-slate-50 absolute left-0 right-0 top-full shadow-md">
             <div class="flex flex-col font-semibold text-sm text-slate-700">
                 <a href="#about" class="px-6 py-3.5 hover:bg-emerald-50 hover:text-emerald-600 border-b border-slate-100/50">About Me</a>
-                <a href="#services" class="px-6 py-3.5 hover:bg-emerald-50 hover:text-emerald-600 border-b border-slate-100/50">Services</a>
+                <a href="#categories" class="px-6 py-3.5 hover:bg-emerald-50 hover:text-emerald-600 border-b border-slate-100/50">Tour Categories</a>
                 <a href="#gallery" class="px-6 py-3.5 hover:bg-emerald-50 hover:text-emerald-600 border-b border-slate-100/50">Gallery</a>
                 <a href="#booking" class="px-6 py-3.5 hover:bg-emerald-50 hover:text-emerald-600 border-b border-slate-100/50">Book Tour</a>
                 <a href="#reviews" class="px-6 py-3.5 hover:bg-emerald-50 hover:text-emerald-600">Reviews</a>
@@ -76,7 +69,6 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <header class="relative bg-slate-900 text-white py-40 px-6 text-center overflow-hidden">
         <img src="https://images.unsplash.com/photo-1546708973-b339540b5162?auto=format&fit=crop&w=1920&q=80" alt="Sri Lanka Tour" class="absolute inset-0 w-full h-full object-cover opacity-35 animate-hero-bg">
         <div class="absolute inset-0 bg-gradient-to-b from-slate-950/60 via-slate-900/50 to-slate-950/90"></div>
@@ -92,14 +84,13 @@
                    class="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-full shadow-lg inline-flex items-center gap-3 transition transform hover:scale-105 w-full sm:w-auto justify-center">
                    <i class="far fa-calendar-alt text-xl"></i> Book Your Schedule
                 </a>
-                <a href="#gallery" class="bg-white/10 hover:bg-white/20 text-white border border-white/20 font-semibold py-4 px-8 rounded-full shadow-md inline-flex items-center transition w-full sm:w-auto justify-center">
-                     View Recent Tours
+                <a href="#categories" class="bg-white/10 hover:bg-white/20 text-white border border-white/20 font-semibold py-4 px-8 rounded-full shadow-md inline-flex items-center transition w-full sm:w-auto justify-center">
+                     Explore Categories
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- About Me Section -->
     <section id="about" class="max-w-6xl mx-auto px-6 py-20 overflow-hidden">
         <div class="grid md:grid-cols-2 gap-12 items-center">
             <div class="relative" data-aos="fade-right" data-aos-duration="1000">
@@ -127,45 +118,85 @@
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="bg-slate-100 py-20 px-6 overflow-hidden">
+    <section id="categories" class="bg-slate-100 py-20 px-6 overflow-hidden">
         <div class="max-w-6xl mx-auto">
             <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
-                <span class="text-emerald-600 font-bold tracking-wider text-sm uppercase">What I Offer</span>
-                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mt-1">Premium Guiding Services</h2>
+                <span class="text-emerald-600 font-bold tracking-wider text-sm uppercase">Tailored Experiences</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mt-1">Popular Sri Lankan Tour Categories</h2>
                 <div class="w-12 h-1 bg-emerald-500 mx-auto mt-3"></div>
+                <p class="text-slate-500 text-sm mt-4">Discover the diverse wonders of Ceylon. Pick your favorite style of travel and let's craft the perfect itinerary.</p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Service 1 -->
-                <div class="bg-white p-8 rounded-2xl shadow-xs hover:shadow-md transition group" data-aos="fade-up" data-aos-delay="100">
-                    <div class="w-12 h-12 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-600 text-xl font-bold group-hover:bg-emerald-600 group-hover:text-white transition">
-                        <i class="fas fa-car"></i>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="category-container bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition group" data-aos="fade-up" data-aos-delay="50">
+                    <div class="relative h-48 overflow-hidden bg-slate-200">
+                        <img class="category-img w-full h-full object-cover" src="https://images.unsplash.com/photo-1581888227599-779811939961?auto=format&fit=crop&w=600&q=80" alt="Wildlife Safari">
+                        <div class="absolute top-4 left-4 bg-emerald-600 text-white p-2.5 rounded-xl text-sm shadow-md"><i class="fas fa-paw"></i></div>
                     </div>
-                    <h3 class="text-xl font-bold mt-6 mb-3 text-slate-900">Private Chauffeur</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">Luxury, fully air-conditioned modern vehicles suitable for smooth long-distance tours.</p>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Wildlife & Safaris</h3>
+                        <p class="text-slate-600 text-xs leading-relaxed">Incredible 4x4 safaris in Yala, Udawalawe, and Minneriya. Witness wild elephants, leopards, and rare tropical birds up close.</p>
+                    </div>
                 </div>
-                <!-- Service 2 -->
-                <div class="bg-white p-8 rounded-2xl shadow-xs hover:shadow-md transition group" data-aos="fade-up" data-aos-delay="200">
-                    <div class="w-12 h-12 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-600 text-xl font-bold group-hover:bg-emerald-600 group-hover:text-white transition">
-                        <i class="fas fa-route"></i>
+
+                <div class="category-container bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="relative h-48 overflow-hidden bg-slate-200">
+                        <img class="category-img w-full h-full object-cover" src="https://images.unsplash.com/photo-1578593139811-2921a287f391?auto=format&fit=crop&w=600&q=80" alt="Hiking Adventure">
+                        <div class="absolute top-4 left-4 bg-emerald-600 text-white p-2.5 rounded-xl text-sm shadow-md"><i class="fas fa-mountain"></i></div>
                     </div>
-                    <h3 class="text-xl font-bold mt-6 mb-3 text-slate-900">Custom Itineraries</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">Tailored tour planning according to your choices, budget, and travel days across Sri Lanka.</p>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Hiking & Mountain Trekking</h3>
+                        <p class="text-slate-600 text-xs leading-relaxed">Trek through Ella Rock, Adam's Peak, and Horton Plains. Breathtaking misty mountain views, waterfalls, and tea-estate trails.</p>
+                    </div>
                 </div>
-                <!-- Service 3 -->
-                <div class="bg-white p-8 rounded-2xl shadow-xs hover:shadow-md transition group" data-aos="fade-up" data-aos-delay="300">
-                    <div class="w-12 h-12 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-600 text-xl font-bold group-hover:bg-emerald-600 group-hover:text-white transition">
-                        <i class="fas fa-paw"></i>
+
+                <div class="category-container bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition group" data-aos="fade-up" data-aos-delay="150">
+                    <div class="relative h-48 overflow-hidden bg-slate-200">
+                        <img class="category-img w-full h-full object-cover" src="https://destinationlesstravel.com/wp-content/uploads/2021/10/Bailey-at-Parrot-Rock-in-Mirissa-Sri-Lanka.jpg?auto=format&fit=crop&w=600&q=80" alt="Beaches">
+                        <div class="absolute top-4 left-4 bg-emerald-600 text-white p-2.5 rounded-xl text-sm shadow-md"><i class="fas fa-umbrella-beach"></i></div>
                     </div>
-                    <h3 class="text-xl font-bold mt-6 mb-3 text-slate-900">Wildlife Safaris</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">Full arrangements for amazing national park safaris like Yala, Minneriya, and Udawalawe.</p>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Tropical Beaches & Surfing</h3>
+                        <p class="text-slate-600 text-xs leading-relaxed">Relax on the golden sands of Mirissa, Unawatuna, and Trincomalee. Enjoy whale watching, coral diving, and world-class surfing.</p>
+                    </div>
+                </div>
+
+                <div class="category-container bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="relative h-48 overflow-hidden bg-slate-200">
+                        <img class="category-img w-full h-full object-cover" src="https://images.unsplash.com/photo-1588598126228-56ee7dbb5b9b?auto=format&fit=crop&w=600&q=80" alt="Cultural Heritage">
+                        <div class="absolute top-4 left-4 bg-emerald-600 text-white p-2.5 rounded-xl text-sm shadow-md"><i class="fas fa-landmark"></i></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Cultural & Ancient Heritage</h3>
+                        <p class="text-slate-600 text-xs leading-relaxed">Explore the Cultural Triangle. Visit the magnificent Sigiriya Rock Fortress, ancient ruins of Polonnaruwa, and Kandy Temple.</p>
+                    </div>
+                </div>
+
+                <div class="category-container bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition group" data-aos="fade-up" data-aos-delay="250">
+                    <div class="relative h-48 overflow-hidden bg-slate-200">
+                        <img class="category-img w-full h-full object-cover" src="https://images.unsplash.com/photo-1542856391-010fb87dcfed?auto=format&fit=crop&w=600&q=80" alt="Scenic Train">
+                        <div class="absolute top-4 left-4 bg-emerald-600 text-white p-2.5 rounded-xl text-sm shadow-md"><i class="fas fa-train"></i></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Scenic Trains & Tea Culture</h3>
+                        <p class="text-slate-600 text-xs leading-relaxed">Take the world-famous Kandy-to-Ella scenic train ride. Walk through lush green tea plantations and taste authentic Ceylon Tea.</p>
+                    </div>
+                </div>
+
+                <div class="category-container bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="relative h-48 overflow-hidden bg-slate-200">
+                        <img class="category-img w-full h-full object-cover" src="https://images.unsplash.com/photo-1561131915-de1610423083?auto=format&fit=crop&w=600&q=80" alt="Food & Ayurveda">
+                        <div class="absolute top-4 left-4 bg-emerald-600 text-white p-2.5 rounded-xl text-sm shadow-md"><i class="fas fa-hotdog"></i></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Local Food & Ayurveda Wellness</h3>
+                        <p class="text-slate-600 text-xs leading-relaxed">Indulge in fiery Sri Lankan rice and curries, street food cooking sessions, and traditional body-healing Ayurveda spa retreats.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Recent Tours Gallery (Expanded Grid for More Photos) -->
     <section id="gallery" class="max-w-6xl mx-auto px-6 py-20">
         <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
             <span class="text-emerald-600 font-bold tracking-wider text-sm uppercase">Moments in Ceylon</span>
@@ -173,60 +204,46 @@
             <div class="w-12 h-1 bg-emerald-500 mx-auto mt-3"></div>
         </div>
 
-        <!-- Expanded grid structure (sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4) to safely hold 12 images -->
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            <!-- Photo 1 - Sigiriya -->
             <div class="gallery-container rounded-xl overflow-hidden shadow-xs aspect-video bg-slate-200" data-aos="zoom-in" data-aos-delay="50">
                 <img class="gallery-img w-full h-full object-cover" src="https://images.unsplash.com/photo-1588598126228-56ee7dbb5b9b?auto=format&fit=crop&w=600&q=80" alt="Sigiriya Rock">
             </div>
-            <!-- Photo 2 - Beach Couple -->
             <div class="gallery-container rounded-xl overflow-hidden shadow-xs aspect-video bg-slate-200" data-aos="zoom-in" data-aos-delay="100">
                 <img class="gallery-img w-full h-full object-cover" src="https://www.sunchasingtravelers.com/wp-content/uploads/2020/09/tangalle-beach-couple-walking-1024x1280.jpg?auto=format&fit=crop&w=600&q=80" alt="Beach">
             </div>
-            <!-- Photo 3 - Elephant Safari -->
             <div class="gallery-container rounded-xl overflow-hidden shadow-xs aspect-video bg-slate-200" data-aos="zoom-in" data-aos-delay="150">
                 <img class="gallery-img w-full h-full object-cover" src="https://images.unsplash.com/photo-1581888227599-779811939961?auto=format&fit=crop&w=600&q=80" alt="Elephant Safari">
             </div>
-            <!-- Photo 4 - Tea Estate -->
             <div class="gallery-container rounded-xl overflow-hidden shadow-xs aspect-video bg-slate-200" data-aos="zoom-in" data-aos-delay="200">
                 <img class="gallery-img w-full h-full object-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAMivd8V_gHsTGSJZuRjwV-Qrj3_CjHJsL7zHhkeuqysYWrw11md6scxo&s=10" alt="Tea Estate">
             </div>
-            <!-- Photo 5 - Nine Arch Ella -->
             <div class="gallery-container rounded-xl overflow-hidden shadow-xs aspect-video bg-slate-200" data-aos="zoom-in" data-aos-delay="250">
                 <img class="gallery-img w-full h-full object-cover" src="https://www.travelmapsrilanka.com/destinations/destinationimages/nine-arch-bridge-in-ella.webp" alt="Nine Arch Ella">
             </div>
-            <!-- Photo 6 - Kandy Temple -->
             <div class="gallery-container rounded-xl overflow-hidden shadow-xs aspect-video bg-slate-200" data-aos="zoom-in" data-aos-delay="300">
                 <img class="gallery-img w-full h-full object-cover" src="https://simpsonsforest.com/wp-content/uploads/2024/03/temple-sacred-tooth-relic-kandy-sri-lanka.jpg" alt="Kandy Temple">
             </div>
-            <!-- Photo 7 - Galle Fort -->
             <div class="gallery-container rounded-xl overflow-hidden shadow-xs aspect-video bg-slate-200" data-aos="zoom-in" data-aos-delay="350">
                 <img class="gallery-img w-full h-full object-cover" src="https://do6raq9h04ex.cloudfront.net/sites/8/2021/07/galle-fort-1050x700-1.jpg" alt="Galle Fort">
             </div>
-            <!-- Photo 8 - Mirissa Beach -->
             <div class="gallery-container rounded-xl overflow-hidden shadow-xs aspect-video bg-slate-200" data-aos="zoom-in" data-aos-delay="400">
                 <img class="gallery-img w-full h-full object-cover" src="https://destinationlesstravel.com/wp-content/uploads/2021/10/Bailey-at-Parrot-Rock-in-Mirissa-Sri-Lanka.jpg" alt="Mirissa Beach">
             </div>
-            <!-- Photo 9 - Train Ride -->
             <div class="gallery-container rounded-xl overflow-hidden shadow-xs aspect-video bg-slate-200" data-aos="zoom-in" data-aos-delay="450">
                 <img class="gallery-img w-full h-full object-cover" src="https://images.unsplash.com/photo-1542856391-010fb87dcfed?auto=format&fit=crop&w=600&q=80" alt="Sri Lanka Scenic Train">
             </div>
-            <!-- Photo 10 - Stilt Fishermen -->
             <div class="gallery-container rounded-xl overflow-hidden shadow-xs aspect-video bg-slate-200" data-aos="zoom-in" data-aos-delay="500">
                 <img class="gallery-img w-full h-full object-cover" src="https://images.unsplash.com/photo-1561131915-de1610423083?auto=format&fit=crop&w=600&q=80" alt="Stilt Fishermen">
             </div>
-            <!-- Photo 11 - Lion Rock View -->
             <div class="gallery-container rounded-xl overflow-hidden shadow-xs aspect-video bg-slate-200" data-aos="zoom-in" data-aos-delay="550">
                 <img class="gallery-img w-full h-full object-cover" src="https://images.unsplash.com/photo-1578593139811-2921a287f391?auto=format&fit=crop&w=600&q=80" alt="Pidurangala View">
             </div>
-            <!-- Photo 12 - Leopard Safari -->
             <div class="gallery-container rounded-xl overflow-hidden shadow-xs aspect-video bg-slate-200" data-aos="zoom-in" data-aos-delay="600">
                 <img class="gallery-img w-full h-full object-cover" src="https://images.unsplash.com/photo-1456926631375-92c8ce872def?auto=format&fit=crop&w=600&q=80" alt="Yala Leopard Safari">
             </div>
         </div>
     </section>
 
-    <!-- NEW Static Booking / Scheduling Section (Direct WhatsApp Integration) -->
     <section id="booking" class="bg-slate-100 py-20 px-6">
         <div class="max-w-3xl mx-auto bg-white rounded-3xl shadow-md border border-slate-100 p-8 md:p-12" data-aos="fade-up">
             <div class="text-center mb-10">
@@ -236,7 +253,6 @@
                 <p class="text-slate-500 text-sm mt-3">Select your dates and travel details below to request a personalized quote instantly.</p>
             </div>
 
-            <!-- Booking Form -->
             <form id="whatsappForm" onsubmit="sendToWhatsApp(event)" class="space-y-6">
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div>
@@ -251,33 +267,45 @@
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div>
-                        <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Arrival Date (Tour Start)</label>
+                        <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Arrival Date</label>
                         <input type="date" id="arrivalDate" required class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-emerald-500 transition">
                     </div>
                     <div>
-                        <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Departure Date (Tour End)</label>
+                        <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Departure Date</label>
                         <input type="date" id="departureDate" required class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-emerald-500 transition">
                     </div>
                 </div>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
                     <div>
-                        <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Number of Travelers</label>
+                        <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Travelers</label>
                         <input type="number" id="travelersCount" min="1" required placeholder="2" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-emerald-500 transition">
                     </div>
                     <div>
-                        <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Preferred Vehicle Type</label>
+                        <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Primary Tour Interest</label>
+                        <select id="tourInterest" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-emerald-500 transition">
+                            <option value="Wildlife & Safaris">Wildlife & Safaris</option>
+                            <option value="Hiking & Mountaineering">Hiking & Mountaineering</option>
+                            <option value="Tropical Beaches & Surfing">Tropical Beaches & Surfing</option>
+                            <option value="Cultural Heritage Sites">Cultural Heritage Sites</option>
+                            <option value="Scenic Train & Tea Estates">Scenic Train & Tea Estates</option>
+                            <option value="Local Food & Wellness">Local Food & Wellness</option>
+                            <option value="Custom Mixed Package">Custom Mixed Tour</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Vehicle Type</label>
                         <select id="vehicleType" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-emerald-500 transition">
-                            <option value="Luxury Sedan Car">Luxury Sedan Car (1-3 Persons)</option>
-                            <option value="Premium Tourist Passenger Van">Premium Passenger Van (4-7 Persons)</option>
-                            <option value="Mini Coach / Mini Bus">Mini Coach (8+ Persons)</option>
+                            <option value="Luxury Sedan Car">Luxury Sedan Car (1-3 Pax)</option>
+                            <option value="Premium Passenger Van">Premium Passenger Van (4-7 Pax)</option>
+                            <option value="Mini Coach / Bus">Mini Coach (8+ Pax)</option>
                         </select>
                     </div>
                 </div>
 
                 <div>
-                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Special Notes or Places You Want to Visit</label>
-                    <textarea id="specialNotes" rows="4" placeholder="We want to visit Sigiriya, Kandy, and go on a Yala safari..." class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-emerald-500 transition"></textarea>
+                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Special Notes or Custom Requests</label>
+                    <textarea id="specialNotes" rows="4" placeholder="Tell us more about your dream trip..." class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-emerald-500 transition"></textarea>
                 </div>
 
                 <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-4 rounded-xl shadow-md transition flex items-center justify-center gap-2 cursor-pointer">
@@ -287,7 +315,6 @@
         </div>
     </section>
 
-    <!-- Tripadvisor Reviews & Ratings Section -->
     <section id="reviews" class="bg-emerald-950 text-white py-20 px-6 relative overflow-hidden">
         <div class="max-w-6xl mx-auto relative z-10">
             <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
@@ -303,9 +330,7 @@
                 </div>
             </div>
 
-            <!-- Review Cards Grid -->
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Review 1 -->
                 <div class="bg-white/5 border border-white/10 backdrop-blur-md rounded-2xl p-6 hover:bg-white/10 transition" data-aos="fade-right" data-aos-duration="1000">
                     <div class="flex justify-between items-start mb-4">
                         <div>
@@ -319,7 +344,6 @@
                     <p class="text-sm text-slate-300 leading-relaxed italic">"Saman made our family tour flawless. He knows the perfect timings to visit spots to avoid heavy crowds. Very careful driver and wonderful storyteller!"</p>
                     <span class="block text-xs text-slate-500 mt-4">Reviewed June 2026</span>
                 </div>
-                <!-- Review 2 -->
                 <div class="bg-white/5 border border-white/10 backdrop-blur-md rounded-2xl p-6 hover:bg-white/10 transition" data-aos="fade-up" data-aos-duration="1000">
                     <div class="flex justify-between items-start mb-4">
                         <div>
@@ -333,7 +357,6 @@
                     <p class="text-sm text-slate-300 leading-relaxed italic">"Traveling alone as a woman can feel uncertain, but Saman made me feel 100% safe. He took me to unique local eating places. Exceptional service!"</p>
                     <span class="block text-xs text-slate-500 mt-4">Reviewed May 2026</span>
                 </div>
-                <!-- Review 3 -->
                 <div class="bg-white/5 border border-white/10 backdrop-blur-md rounded-2xl p-6 hover:bg-white/10 transition" data-aos="fade-left" data-aos-duration="1000">
                     <div class="flex justify-between items-start mb-4">
                         <div>
@@ -351,7 +374,6 @@
         </div>
     </section>
 
-    <!-- Quick FAQ Section -->
     <section class="max-w-4xl mx-auto px-6 py-20">
         <div class="text-center mb-12" data-aos="fade-up">
             <h2 class="text-3xl font-extrabold text-slate-900">Frequently Asked Questions</h2>
@@ -369,7 +391,6 @@
         </div>
     </section>
 
-    <!-- Call To Action Footer -->
     <footer class="bg-slate-900 text-slate-400 py-16 px-6 border-t border-slate-800 text-center">
         <div class="max-w-4xl mx-auto" data-aos="fade-up">
             <h3 class="text-white text-2xl font-bold tracking-wider mb-2">READY TO DISCOVER SRI LANKA?</h3>
@@ -391,7 +412,6 @@
         </div>
     </footer>
 
-    <!-- AOS Animations JS Library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
@@ -399,11 +419,10 @@
             mirror: false
         });
 
-        // Simple Pure JS function to parse form inputs and redirect directly to WhatsApp
         function sendToWhatsApp(event) {
             event.preventDefault();
             
-            // Saman's Real Phone Number (Replace this with his actual number before going live)
+            // Saman's Real Phone Number (Remember to replace this!)
             const whatsappNumber = "94722914390"; 
             
             const name = document.getElementById('clientName').value;
@@ -411,10 +430,10 @@
             const arrival = document.getElementById('arrivalDate').value;
             const departure = document.getElementById('departureDate').value;
             const travelers = document.getElementById('travelersCount').value;
+            const interest = document.getElementById('tourInterest').value;
             const vehicle = document.getElementById('vehicleType').value;
             const notes = document.getElementById('specialNotes').value;
             
-            // Crafting a perfectly readable and structured WhatsApp Message text
             const message = `Hello Saman! I would like to book a tour with you.%0A%0A` +
                             `*Booking Details:*%0A` +
                             `• *Name:* ${name}%0A` +
@@ -422,10 +441,10 @@
                             `• *Arrival Date:* ${arrival}%0A` +
                             `• *Departure Date:* ${departure}%0A` +
                             `• *Travelers:* ${travelers} Persons%0A` +
+                            `• *Tour Interest:* ${interest}%0A` +
                             `• *Vehicle Preference:* ${vehicle}%0A` +
                             `• *Special Notes:* ${notes ? notes : 'None'}`;
             
-            // Redirecting directly to WhatsApp API Web/App URL
             window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
         }
     </script>
